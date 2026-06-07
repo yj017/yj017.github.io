@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yujie Gao | Data Scientist & ML Engineer</title>
-    <!-- Tailwind CSS CDN -->
+    <title>Yujie (Kai) Gao | Data Scientist & ML Engineer Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -23,7 +22,6 @@
             }
         }
     </script>
-    <!-- Google Fonts & FontAwesome Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -40,7 +38,6 @@
 </head>
 <body class="text-slate-300 antialiased selection:bg-emerald-500/30 selection:text-emerald-300">
 
-    <!-- 1. Header & Navigation -->
     <header class="fixed top-0 left-0 w-full z-50 bg-darkBg/80 backdrop-blur-md border-b border-slate-800/60">
         <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
             <a href="#" class="font-bold text-lg text-white hover:text-emerald-400 transition-colors duration-300">
@@ -51,7 +48,8 @@
                 <a href="#education" class="hover:text-white transition-colors">Education</a>
                 <a href="#experience" class="hover:text-white transition-colors">Experience</a>
                 <a href="#projects" class="hover:text-white transition-colors">Projects</a>
-                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+                <a href="#personal" class="hover:text-white transition-colors">Personal</a>
+                <a href="#resume" class="hover:text-white transition-colors">Resume</a>
             </nav>
             <div class="md:hidden">
                 <button id="menu-btn" class="text-slate-400 hover:text-white focus:outline-none">
@@ -59,22 +57,20 @@
                 </button>
             </div>
         </div>
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-darkBg/95 border-b border-slate-800/80 px-6 py-4 flex flex-col space-y-3 text-sm">
             <a href="#about" class="hover:text-white transition-colors" onclick="toggleMenu()">About</a>
             <a href="#education" class="hover:text-white transition-colors" onclick="toggleMenu()">Education</a>
             <a href="#experience" class="hover:text-white transition-colors" onclick="toggleMenu()">Experience</a>
             <a href="#projects" class="hover:text-white transition-colors" onclick="toggleMenu()">Projects</a>
-            <a href="#contact" class="hover:text-white transition-colors" onclick="toggleMenu()">Contact</a>
+            <a href="#personal" class="hover:text-white transition-colors" onclick="toggleMenu()">Personal</a>
+            <a href="#resume" class="hover:text-white transition-colors" onclick="toggleMenu()">Resume</a>
         </div>
     </header>
 
-    <!-- Main Content Container -->
     <main class="max-w-5xl mx-auto px-6 pt-32 pb-24">
 
-        <!-- 2. Hero Section -->
         <section id="about" class="mb-24 md:mb-32">
-            <p class="text-emerald-400 font-mono text-sm mb-3 tracking-wider">👋 Hi, I'm</p>
+            <p class="text-emerald-400 font-mono text-sm mb-3 tracking-wider">I'm</p>
             <h1 class="text-5xl md:text-7xl font-bold text-white tracking-tight mb-4">
                 Yujie (Kai) Gao
             </h1>
@@ -82,7 +78,7 @@
                 Data Scientist & ML Engineer
             </h2>
             <p class="max-w-2xl text-slate-400 text-lg leading-relaxed mb-8">
-                Passionate about operations research, deep learning pipelines, and causal inference. I specialize in translating hardcore algorithms—like high-concurrency dynamic pricing, low-latency bioacoustics edge deployment, and high-dimensional observational data debiasing—into actionable business and technical impact.
+                Passionate about operations research, data analysis, deep learning pipelines. I specialize in translating hardcore algorithms into actionable business and technical impact. Also a competitive powerlifter and league of legends player.
             </p>
             <div class="flex flex-wrap gap-4">
                 <a href="#projects" class="px-6 py-3 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-400 hover:to-emerald-500 text-darkBg font-semibold rounded-lg shadow-lg hover:shadow-emerald-500/20 transition-all duration-300">
@@ -94,7 +90,6 @@
             </div>
         </section>
 
-        <!-- 3. Education Section -->
         <section id="education" class="mb-24 md:mb-32">
             <div class="flex items-center gap-4 mb-10">
                 <h3 class="text-2xl font-bold text-white font-mono">&lt;Education /&gt;</h3>
@@ -102,17 +97,15 @@
             </div>
             
             <div class="space-y-8">
-                <!-- Master's Degree -->
                 <div class="border-l-2 border-emerald-500/40 pl-6 relative">
                     <div class="absolute w-3 h-3 bg-emerald-500 rounded-full -left-[7px] top-1.5 ring-4 ring-darkBg"></div>
                     <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
                         <h4 class="text-lg font-bold text-slate-100">Cornell University (Cornell Tech)</h4>
-                        <span class="text-sm font-mono text-slate-500">Expected May 2026</span>
+                        <span class="text-sm font-mono text-slate-500">May 2026</span>
                     </div>
                     <p class="text-sm text-emerald-400 font-medium mb-1">MEng in Operations Research and Information Engineering</p>
                     <p class="text-xs text-slate-500">Merit Scholarship</p>
                 </div>
-                <!-- Bachelor's Degree -->
                 <div class="border-l-2 border-slate-800 pl-6 relative">
                     <div class="absolute w-3 h-3 bg-slate-700 rounded-full -left-[7px] top-1.5 ring-4 ring-darkBg"></div>
                     <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
@@ -124,7 +117,6 @@
             </div>
         </section>
 
-        <!-- 4. Professional Experience Section -->
         <section id="experience" class="mb-24 md:mb-32">
             <div class="flex items-center gap-4 mb-10">
                 <h3 class="text-2xl font-bold text-white font-mono">&lt;Experience /&gt;</h3>
@@ -132,7 +124,6 @@
             </div>
 
             <div class="space-y-12">
-                <!-- Goodyear Tire -->
                 <div class="bg-slate-900/30 border border-slate-800/60 rounded-xl p-6">
                     <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4 pb-4 border-b border-slate-800/40">
                         <div>
@@ -149,7 +140,6 @@
                     </ul>
                 </div>
 
-                <!-- Baidu -->
                 <div class="bg-slate-900/30 border border-slate-800/60 rounded-xl p-6">
                     <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4 pb-4 border-b border-slate-800/40">
                         <div>
@@ -168,7 +158,6 @@
             </div>
         </section>
 
-        <!-- 5. Projects Section -->
         <section id="projects" class="mb-24 md:mb-32">
             <div class="flex items-center gap-4 mb-12">
                 <h3 class="text-2xl font-bold text-white font-mono">&lt;Selected Projects /&gt;</h3>
@@ -176,47 +165,7 @@
             </div>
 
             <div class="grid md:grid-cols-1 gap-8">
-                
-                <!-- Project 1: Pricing Engine -->
-                <div class="group bg-slate-900/40 border border-slate-800/80 rounded-2xl p-6 hover:border-emerald-500/30 transition-all duration-300">
-                    <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 mb-4">
-                        <div>
-                            <h4 class="text-xl font-bold text-slate-100 group-hover:text-emerald-400 transition-colors duration-300">
-                                Algorithmic Pricing & Dynamic Programming Engine
-                            </h4>
-                            <p class="text-xs font-mono text-slate-500 mt-1">XGBoost, Scikit-learn, K-Means, Backward Induction, Finite-Horizon Optimization</p>
-                        </div>
-                        <!-- IMPORTANT: Replace YOUR_GITHUB_USERNAME and REPO_NAME with actual values -->
-                        <div class="flex gap-4 text-slate-400 shrink-0">
-                            <a href="https://github.com/YOUR_GITHUB_USERNAME/REPO_NAME" target="_blank" class="hover:text-emerald-400 transition-colors flex items-center gap-1 text-sm font-mono" title="View Source Code">
-                                <i class="fa-brands fa-github text-lg"></i> Code
-                            </a>
-                            <a href="https://YOUR_GITHUB_USERNAME.github.io/REPO_NAME/" target="_blank" class="hover:text-emerald-400 transition-colors flex items-center gap-1 text-sm font-mono" title="View Deep Dive Site">
-                                <i class="fa-solid fa-arrow-up-right-from-square text-base"></i> Deep Dive
-                            </a>
-                        </div>
-                    </div>
-                    <p class="text-sm text-slate-400 leading-relaxed mb-6">
-                        Developed an end-to-end dynamic pricing system that handles real-time revenue optimization by decoupling offline machine learning demand estimation from an online finite-horizon optimization solver. Built a dynamic programming solver with K-Means state discretization and precomputed policies, enabling extremely low-latency online pricing decisions.
-                    </p>
-                    <!-- Metrics Badge -->
-                    <div class="grid grid-cols-3 gap-4 p-4 bg-darkBg/60 rounded-xl border border-slate-800/60 text-center">
-                        <div>
-                            <div class="text-xl font-bold text-emerald-400 font-mono">O(1)</div>
-                            <div class="text-[10px] text-slate-500 uppercase tracking-wider mt-0.5">Time Complexity</div>
-                        </div>
-                        <div>
-                            <div class="text-xl font-bold text-emerald-400 font-mono">+39.1%</div>
-                            <div class="text-[10px] text-slate-500 uppercase tracking-wider mt-0.5">Profit vs Baseline</div>
-                        </div>
-                        <div>
-                            <div class="text-xl font-bold text-emerald-400 font-mono">&lt; 0.5s</div>
-                            <div class="text-[10px] text-slate-500 uppercase tracking-wider mt-0.5">Inference Delay</div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Project 2: Bird Audio -->
                 <div class="group bg-slate-900/40 border border-slate-800/80 rounded-2xl p-6 hover:border-blue-500/30 transition-all duration-300">
                     <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 mb-4">
                         <div>
@@ -253,7 +202,42 @@
                     </div>
                 </div>
 
-                <!-- Project 3: Causal Inference -->
+                <div class="group bg-slate-900/40 border border-slate-800/80 rounded-2xl p-6 hover:border-emerald-500/30 transition-all duration-300">
+                    <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 mb-4">
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-100 group-hover:text-emerald-400 transition-colors duration-300">
+                                Algorithmic Pricing & Dynamic Programming Engine
+                            </h4>
+                            <p class="text-xs font-mono text-slate-500 mt-1">XGBoost, Scikit-learn, K-Means, Backward Induction, Finite-Horizon Optimization</p>
+                        </div>
+                        <div class="flex gap-4 text-slate-400 shrink-0">
+                            <a href="https://github.com/yj017/ORIE-5355-Algorithmic-Pricing-Dynamic-Programming-Engine-" target="_blank" class="hover:text-emerald-400 transition-colors flex items-center gap-1 text-sm font-mono" title="View Source Code">
+                                <i class="fa-brands fa-github text-lg"></i> Codeß
+                            </a>
+                            <a href="https://yj017.github.io/ORIE-5355-Algorithmic-Pricing-Dynamic-Programming-Engine-/" target="_blank" class="hover:text-emerald-400 transition-colors flex items-center gap-1 text-sm font-mono" title="View Deep Dive Site">
+                                <i class="fa-solid fa-arrow-up-right-from-square text-base"></i> Deep Dive
+                            </a>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">
+                        Developed an end-to-end dynamic pricing system that handles real-time revenue optimization by decoupling offline machine learning demand estimation from an online finite-horizon optimization solver. Built a dynamic programming solver with K-Means state discretization and precomputed policies, enabling extremely low-latency online pricing decisions.
+                    </p>
+                    <div class="grid grid-cols-3 gap-4 p-4 bg-darkBg/60 rounded-xl border border-slate-800/60 text-center">
+                        <div>
+                            <div class="text-xl font-bold text-emerald-400 font-mono">O(1)</div>
+                            <div class="text-[10px] text-slate-500 uppercase tracking-wider mt-0.5">Time Complexity</div>
+                        </div>
+                        <div>
+                            <div class="text-xl font-bold text-emerald-400 font-mono">+39.1%</div>
+                            <div class="text-[10px] text-slate-500 uppercase tracking-wider mt-0.5">Profit vs Baseline</div>
+                        </div>
+                        <div>
+                            <div class="text-xl font-bold text-emerald-400 font-mono">&lt; 0.5s</div>
+                            <div class="text-[10px] text-slate-500 uppercase tracking-wider mt-0.5">Inference Delay</div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="group bg-slate-900/40 border border-slate-800/80 rounded-2xl p-6 hover:border-purple-500/30 transition-all duration-300">
                     <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 mb-4">
                         <div>
@@ -263,10 +247,10 @@
                             <p class="text-xs font-mono text-slate-500 mt-1">GLM, Inverse Propensity Weighting (IPW), Statsmodels, GMM, Bootstrap</p>
                         </div>
                         <div class="flex gap-4 text-slate-400 shrink-0">
-                            <a href="https://github.com/YOUR_GITHUB_USERNAME/REPO_NAME" target="_blank" class="hover:text-purple-400 transition-colors flex items-center gap-1 text-sm font-mono">
+                            <a href="https://github.com/yj017/Data-102-Causal-Inference-Environmental-Health-Modeling" target="_blank" class="hover:text-purple-400 transition-colors flex items-center gap-1 text-sm font-mono">
                                 <i class="fa-brands fa-github text-lg"></i> Code
                             </a>
-                            <a href="https://YOUR_GITHUB_USERNAME.github.io/REPO_NAME/" target="_blank" class="hover:text-purple-400 transition-colors flex items-center gap-1 text-sm font-mono">
+                            <a href="https://yj017.github.io/Data-102-Causal-Inference-Environmental-Health-Modeling" target="_blank" class="hover:text-purple-400 transition-colors flex items-center gap-1 text-sm font-mono">
                                 <i class="fa-solid fa-arrow-up-right-from-square text-base"></i> Deep Dive
                             </a>
                         </div>
@@ -293,7 +277,93 @@
             </div>
         </section>
 
-        <!-- 6. Contact Section -->
+        <section id="personal" class="mb-24 md:mb-32">
+            <div class="flex items-center gap-4 mb-12">
+                <h3 class="text-2xl font-bold text-white font-mono">&lt;Beyond Code /&gt;</h3>
+                <div class="h-[1px] bg-slate-800 flex-grow"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <a href="https://www.openpowerlifting.org/u/yujiegao" target="_blank" class="group bg-slate-900/30 border border-slate-800/60 rounded-xl p-6 hover:border-rose-500/30 hover:bg-slate-900/50 transition-all duration-300 flex flex-col justify-between cursor-pointer">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-2xl text-rose-500/80 group-hover:text-rose-400 transition-colors">
+                                <i class="fa-solid fa-dumbbell"></i>
+                            </span>
+                            <span class="text-xs font-mono text-slate-500 group-hover:text-rose-400 transition-colors flex items-center gap-1">
+                                OpenPowerlifting <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </span>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-100 mb-2">Competitive Powerlifting</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed mb-6">
+                            Dedicated to strength training, fatigue management, and constant progression.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-3 gap-2 pt-4 border-t border-slate-800/40 text-center">
+                        <div>
+                            <div class="text-sm font-bold text-slate-200 font-mono">220kg+</div>
+                            <div class="text-[10px] text-slate-500 uppercase tracking-wider mt-0.5">Squat</div>
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-slate-200 font-mono">117.5kg+</div>
+                            <div class="text-[10px] text-slate-500 uppercase tracking-wider mt-0.5">Bench</div>
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-rose-400 font-mono">227.5kg+</div>
+                            <div class="text-[10px] text-slate-500 uppercase tracking-wider mt-0.5">Deadlift</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://op.gg/lol/summoners/na/H4GEy-NA1" target="_blank" class="group bg-slate-900/30 border border-slate-800/60 rounded-xl p-6 hover:border-amber-500/30 hover:bg-slate-900/50 transition-all duration-300 flex flex-col justify-between cursor-pointer">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-2xl text-amber-500/80 group-hover:text-amber-400 transition-colors">
+                                <i class="fa-solid fa-gamepad"></i>
+                            </span>
+                            <span class="text-xs font-mono text-slate-500 group-hover:text-amber-400 transition-colors flex items-center gap-1">
+                                OP.GG <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </span>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-100 mb-2">League of Legends</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed mb-6">
+                            Thriving in high-stakes competitive environments. Heavily focused on refining micro-mechanics, optimal positioning, and macro strategy to consistently push rank.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2 pt-4 border-t border-slate-800/40">
+                        <div class="text-left">
+                            <div class="text-[10px] text-slate-500 uppercase tracking-wider mb-1">Champion Pool</div>
+                            <div class="text-xs font-mono text-slate-300">Vayne, Yone, Akali, Sylas</div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-[10px] text-slate-500 uppercase tracking-wider mb-1">Current Goal</div>
+                            <div class="text-xs font-bold text-amber-400 font-mono">Master Tier</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="resume" class="mb-24 md:mb-32">
+            <div class="flex items-center gap-4 mb-12">
+                <h3 class="text-2xl font-bold text-white font-mono">&lt;Resume /&gt;</h3>
+                <div class="h-[1px] bg-slate-800 flex-grow"></div>
+            </div>
+            
+            <div class="bg-slate-900/30 border border-slate-800/60 rounded-2xl p-8 text-center hover:border-emerald-500/30 hover:bg-slate-900/50 transition-all duration-300">
+                <div class="text-4xl text-emerald-500 mb-4">
+                    <i class="fa-regular fa-file-pdf"></i>
+                </div>
+                <h4 class="text-2xl font-bold text-slate-100 mb-3">Full Curriculum Vitae</h4>
+                <p class="text-sm text-slate-400 max-w-lg mx-auto mb-8">
+                    Looking for a comprehensive overview of my academic background, technical capabilities, and professional journey? You can view or download my complete, up-to-date resume here.
+                </p>
+                <a href="./resume.pdf" target="_blank" class="inline-flex items-center gap-3 px-8 py-3 bg-emerald-500 hover:bg-emerald-400 text-darkBg font-bold rounded-lg shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/40 transition-all duration-300">
+                    <i class="fa-solid fa-download"></i> Download Resume (PDF)
+                </a>
+            </div>
+        </section>
+
         <section id="contact" class="text-center pt-16 border-t border-slate-800/60">
             <h3 class="text-2xl font-bold text-white mb-4 font-mono">&lt;Contact /&gt;</h3>
             <p class="text-slate-400 max-w-md mx-auto mb-8 text-sm">
@@ -306,7 +376,7 @@
                 <a href="tel:929-496-0573" class="hover:text-emerald-400 transition-colors" title="Phone: 929-496-0573">
                     <i class="fa-solid fa-phone"></i>
                 </a>
-                <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" class="hover:text-emerald-400 transition-colors" title="GitHub Profile">
+                <a href="https://github.com/yj017" target="_blank" class="hover:text-emerald-400 transition-colors" title="GitHub Profile">
                     <i class="fa-brands fa-github"></i>
                 </a>
             </div>
@@ -317,7 +387,6 @@
 
     </main>
 
-    <!-- Simple JS for Mobile Menu Toggle -->
     <script>
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
