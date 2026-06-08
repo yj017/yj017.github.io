@@ -43,6 +43,7 @@
                 <a href="#education" class="hover:text-white transition-colors">Education</a>
                 <a href="#experience" class="hover:text-white transition-colors">Experience</a>
                 <a href="#projects" class="hover:text-white transition-colors">Projects</a>
+                <a href="#publications" class="hover:text-white transition-colors">Publications</a>
                 <a href="#personal" class="hover:text-white transition-colors">Personal</a>
                 <a href="#resume" class="hover:text-white transition-colors">Resume</a>
             </nav>
@@ -57,6 +58,7 @@
             <a href="#education" class="hover:text-white transition-colors" onclick="toggleMenu()">Education</a>
             <a href="#experience" class="hover:text-white transition-colors" onclick="toggleMenu()">Experience</a>
             <a href="#projects" class="hover:text-white transition-colors" onclick="toggleMenu()">Projects</a>
+            <a href="#publications" class="hover:text-white transition-colors" onclick="toggleMenu()">Publications</a>
             <a href="#personal" class="hover:text-white transition-colors" onclick="toggleMenu()">Personal</a>
             <a href="#resume" class="hover:text-white transition-colors" onclick="toggleMenu()">Resume</a>
         </div>
@@ -261,6 +263,41 @@
                     </div>
                 </div>
 
+            </div>
+        </section>
+
+        <section id="publications" class="mb-24 md:mb-32">
+            <div class="flex items-center gap-4 mb-12">
+                <h3 class="text-2xl font-bold text-white font-mono">&lt;Publications /&gt;</h3>
+                <div class="h-[1px] bg-zinc-800 flex-grow"></div>
+            </div>
+
+            <div class="space-y-8">
+                <div class="bg-darkCard border border-zinc-800/80 rounded-xl p-6 hover:border-zinc-400 transition-all duration-300">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4 pb-4 border-b border-zinc-800/80">
+                        <div>
+                            <h4 class="text-xl font-bold text-white leading-tight">
+                                Machine Learning improvements to the accuracy of predicting Specific Language Impairment
+                            </h4>
+                            <p class="text-sm text-zinc-400 mt-2 font-mono">
+                                Advised by David Woodruff from CMU CS department.
+                            </p>
+                        </div>
+                        <div class="text-left md:text-right shrink-0 mt-3 md:mt-0 md:ml-6">
+                            <div class="text-xs font-bold text-zinc-300 uppercase tracking-wider bg-zinc-900 border border-zinc-800 px-3 py-1 rounded-full inline-block">
+                                ICICML 2022
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-sm text-zinc-400 leading-relaxed mb-6">
+                        Published at the 2022 International Conference on Image Processing, Computer Vision and Machine Learning (ICICML). This research investigates the application of Machine Learning models to accurately diagnose Specific Language Impairment (SLI) in children. We addressed critical data challenges including imbalanced datasets (using SMOTE) and evaluated feature extraction methodologies like PCA, ultimately optimizing prediction accuracy using Back Propagation Neural Networks (BPNN).
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://ieeexplore.ieee.org/document/10009881" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 bg-zinc-100 hover:bg-white text-black text-sm font-bold rounded-lg transition-all duration-300">
+                            <i class="fa-solid fa-book-open"></i> IEEE Xplore
+                        </a>
+                        </div>
+                </div>
             </div>
         </section>
 
